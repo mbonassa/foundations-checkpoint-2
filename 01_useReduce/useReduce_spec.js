@@ -10,9 +10,11 @@ describe("using the Array.prototype.reduce function", function() {
     // ***** SOLUTION HERE *****
     //var sum = ...
     //your code here!! use the Array method 'reduce' to find the sum of the above array
+    var sum = callReduceOnThisArray.reduce(function (a, b) {return a + b}, 100)
 
     expect(sum).toEqual(115);
     expect(Array.prototype.reduce).toHaveBeenCalled();
   });
 
 });
+
